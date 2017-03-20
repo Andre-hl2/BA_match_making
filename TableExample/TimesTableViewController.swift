@@ -12,7 +12,7 @@ class TimesTableViewController: UITableViewController {
 
     var time1 : [String] = []
     var time2 : [String] = []
-    var media = [String:Int]()
+    var media = [String:Float]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class TimesTableViewController: UITableViewController {
                     
                     print(actual/max)
                     
-                    media[member] = actual/max
+                    media[member] = Float(actual)/Float(max)
                 } else {
                     media[member] = 0
                 }
