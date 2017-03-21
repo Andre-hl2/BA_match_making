@@ -23,20 +23,26 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if(indexPath.row == tableView.indexPath(for: zerar_cell)?.row) {
             
-            let defaults = UserDefaults.standard
-            
-            if let load_members = defaults.object(forKey: "members") {
-                let uni = load_members as! String
-                let two = uni.components(separatedBy: ",")
+            let confirmAlert = UIAlertController(title: "Zerar Votos", message: "Tem certeza que deseja zerar os votos?", preferredStyle: .alert)
+            confirmAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+                let defaults = UserDefaults.standard
                 
-                for member in two {
-                    defaults.removeObject(forKey: member)
+                if let load_members = defaults.object(forKey: "members") {
+                    let uni = load_members as! String
+                    let two = uni.components(separatedBy: ",")
+                    
+                    for member in two {
+                        defaults.removeObject(forKey: member)
+                    }
                 }
-            }
-            
-            let alert = UIAlertController(title: "Concluído", message: "Votos zerados", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+                
+                let alert = UIAlertController(title: "Concluído", message: "Votos zerados", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            }))
+            confirmAlert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+            self.present(confirmAlert, animated: true, completion: nil)
         }
     }
 
