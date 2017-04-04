@@ -60,8 +60,28 @@
                                             <segue destination="9l4-47-pmh" kind="show" id="ucs-TN-tmg"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="dCS-EC-wO8" style="IBUITableViewCellStyleDefault" id="Nsd-4H-jAP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Hrp-yh-WRI" style="IBUITableViewCellStyleDefault" id="zqT-3I-Tmn">
                                         <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zqT-3I-Tmn" id="KWz-9z-rvr">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mostrar pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hrp-yh-WRI">
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Aw1-PJ-7qS" kind="show" id="uks-te-cGB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="dCS-EC-wO8" style="IBUITableViewCellStyleDefault" id="Nsd-4H-jAP">
+                                        <rect key="frame" x="0.0" y="188" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nsd-4H-jAP" id="Jxh-9m-dDy">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
@@ -78,26 +98,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="s7U-TC-89y" kind="show" id="uOf-TS-SxO"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="cvN-xW-AsA" style="IBUITableViewCellStyleDefault" id="cRb-TU-hfR">
-                                        <rect key="frame" x="0.0" y="188" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cRb-TU-hfR" id="BPt-Re-iXT">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mostrar pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cvN-xW-AsA">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Aw1-PJ-7qS" kind="show" id="l2D-vI-a92"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Gdn-KZ-LAe" style="IBUITableViewCellStyleDefault" id="T8B-Ec-usE">
@@ -176,7 +176,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5A9-Yr-ZQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="-1095"/>
+            <point key="canvasLocation" x="2025" y="-332"/>
         </scene>
         <!--Balanced Anihilation Match Making-->
         <scene sceneID="2vR-TW-ZaL">
@@ -194,7 +194,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nq-3F-Piw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="-27"/>
+            <point key="canvasLocation" x="-111" y="-9"/>
         </scene>
         <!--Adicionar Voto-->
         <scene sceneID="j6J-J1-eUr">
@@ -238,7 +238,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3B-1P-nz5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="-412"/>
+            <point key="canvasLocation" x="1401" y="-332"/>
         </scene>
         <!--Times-->
         <scene sceneID="c3R-8K-za0">
@@ -276,7 +276,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d9Y-TF-Gs2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="261"/>
+            <point key="canvasLocation" x="1401" y="313"/>
         </scene>
         <!--Pontuação-->
         <scene sceneID="Ved-r2-WyP">
@@ -317,17 +317,11 @@
                             <outlet property="delegate" destination="Aw1-PJ-7qS" id="cGC-cy-9Tj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pontuação" id="yRd-0P-4iB">
-                        <barButtonItem key="rightBarButtonItem" title="Novo" id="ghL-ij-3VW">
-                            <connections>
-                                <action selector="NovoMembro:" destination="Aw1-PJ-7qS" id="Jel-7J-4TT"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Pontuação" id="yRd-0P-4iB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fl6-0D-jUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="915"/>
+            <point key="canvasLocation" x="2025" y="312"/>
         </scene>
     </scenes>
 </document>
